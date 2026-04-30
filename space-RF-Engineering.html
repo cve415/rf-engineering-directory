@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satellite & RF Engineering Ecosystem Map</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.5/css/dataTables.bootstrap5.min.css">
+    <style>
+        body { background-color: #f4f7f6; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .container { margin-top: 40px; margin-bottom: 60px; }
+        .hero { background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); color: white; padding: 50px 20px; border-radius: 15px; margin-bottom: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
+        .card { border: none; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .sf-tag { background-color: #0d6efd; color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: bold; }
+        .table thead th { background-color: #e9ecef; border-bottom: 2px solid #dee2e6; }
+        .dataTables_wrapper .dataTables_filter input { border-radius: 20px; padding: 8px 15px; border: 1px solid #ced4da; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="hero text-center">
+        <h1 class="display-5 fw-bold">🛰️ Satellite & RF Engineering Companies</h1>
+        <p class="lead">Mapping 50+ industry leaders in phased arrays, SSPAs, and satellite payloads.</p>
+    </div>
+
+    <div class="card p-4">
+        <div class="table-responsive">
+            <table id="masterTable" class="table table-hover align-middle">
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Location</th>
+                        <th>Stage / Funding</th>
+                        <th>Technical Focus</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>All Flex Solutions</td><td>Northfield, MN</td><td>Private (PE Backed)</td><td>Flex interconnects for satellite arrays and antennas.</td></tr>
+                    <tr><td>Amazon (Project Kuiper)</td><td>Redmond, WA / Sunnyvale, CA</td><td>Public (AMZN)</td><td>LEO broadband RF hardware and advanced simulation (HFSS/ADS).</td></tr>
+                    <tr><td>American Standard Circuits</td><td>West Chicago, IL</td><td>Private (Mid-Market)</td><td>RF hybrids for satellite transponders and SSPAs.</td></tr>
+                    <tr><td>Analog Devices (ADI)</td><td>San Jose / Wilmington</td><td>Public (ADI)</td><td>Designers of RF signal chain ICs (mixers, PLLs, LNAs).</td></tr>
+                    <tr><td>Anduril Industries</td><td>Costa Mesa / SF</td><td>Series F (~$1.5B+)</td><td>SDR (Software Defined Radio) and RF/EW (Electronic Warfare).</td></tr>
+                    <tr><td>Apex Space</td><td>Los Angeles, CA</td><td>Series B (~$100M+)</td><td>Fast-iteration satellite bus with RF payload integration.</td></tr>
+                    <tr><td>Aptos Orbital</td><td><span class="sf-tag">San Francisco, CA</span></td><td>Early / ~$20M+</td><td>Space-hardened comms terminals; SF-based hardware startup.</td></tr>
+                    <tr><td>Archer Aviation</td><td>San Jose, CA</td><td>Public (ACHR)</td><td>Embedded electronics and power hardware with comms experience.</td></tr>
+                    <tr><td>Arlon EMD</td><td>Rancho Cucamonga, CA</td><td>Private (AGC Sub)</td><td>Material scientists for high-temp, space-grade RF laminates.</td></tr>
+                    <tr><td>Array Labs</td><td>Palo Alto, CA</td><td>Series A (High)</td><td>Radar imaging constellations; deep RF/Radar engineering.</td></tr>
+                    <tr><td>AST SpaceMobile</td><td>Midland, TX / MD</td><td>Public (ASTS)</td><td>Direct-to-cell GEO/LEO RF front ends; heavy focus on large SSPAs and LNAs.</td></tr>
+                    <tr><td>Astranis</td><td><span class="sf-tag">San Francisco, CA</span></td><td>Series D</td><td>Micro-GEO satellites; specialized in software-defined RF payloads and high-power SSPAs.</td></tr>
+                    <tr><td>Blue Canyon (RTX)</td><td>Oakland, CA / CO</td><td>Public (RTX Sub)</td><td>Small-sat bus specialists with significant RF heritage.</td></tr>
+                    <tr><td>Blue Origin</td><td>Kent, WA / Los Angeles, CA</td><td>Private (Giant)</td><td>Spacecraft RF comms and Lunar-link hardware talent.</td></tr>
+                    <tr><td>Blue Shift</td><td>Maine</td><td>-</td><td>Niche launch/satellite services.</td></tr>
+                    <tr><td>Capella Space</td><td><span class="sf-tag">San Francisco, CA</span></td><td>Series C/D (~$250M+)</td><td>SAR Radar specialists; elite microwave and radar front-end talent pool.</td></tr>
+                    <tr><td>CesiumAstro</td><td>Austin / El Segundo</td><td>Series B (~$100M+)</td><td>Active phased array and software-defined radio (SDR) specialists.</td></tr>
+                    <tr><td>Firan Technology (FTG)</td><td>Chatsworth, CA</td><td>Public (TSX: FTG)</td><td>Thermal management; cooling high-power amps via metal-core.</td></tr>
+                    <tr><td>Green Circuits</td><td>San Jose, CA</td><td>Private (PE Backed)</td><td>Space-grade RF PCB assembly, bring-up, and failure analysis.</td></tr>
+                    <tr><td>GS Swiss PCB</td><td>Schwyz, CH</td><td>Private (Mid-Market)</td><td>HDI specialists for ultra-miniaturized spacecraft circuitry.</td></tr>
+                    <tr><td>Hadrian</td><td>Torrance, CA</td><td>Series B (Moderate)</td><td>Automated aerospace manufacturing; software/hardware integration.</td></tr>
+                    <tr><td>Impulse Space</td><td>El Segundo, CA</td><td>Series B (~$75M+)</td><td>RF Test/Simulation focus for flight hardware and propulsion.</td></tr>
+                    <tr><td>Joby Aviation</td><td>Santa Cruz / San Jose</td><td>Public (JOBY)</td><td>Safety-critical avionics and communication designers.</td></tr>
+                    <tr><td>Kepler Communications</td><td>Toronto, ON</td><td>Series C (~$100M+)</td><td>Small-sat RF payloads and end-to-end connectivity chains.</td></tr>
+                    <tr><td>L3Harris</td><td>Melbourne, FL / UT</td><td>Public (LHX)</td><td>Dominant in satellite terminals and high-speed data links.</td></tr>
+                    <tr><td>Lockheed Martin Space</td><td>Sunnyvale, CA</td><td>Public (LMT)</td><td>Massive engineering pool; target 'Protected Communications' RF.</td></tr>
+                    <tr><td>MACOM</td><td>San Jose / Lowell</td><td>Public (MTSI)</td><td>GaN microwave transistor specialists—the guts of an SSPA.</td></tr>
+                    <tr><td>Millennium Space Systems</td><td>El Segundo, CA</td><td>Public (Boeing Sub)</td><td>Fast-paced, small-sat focus within a defense parent.</td></tr>
+                    <tr><td>Mithril Technologies</td><td>Austin, TX</td><td>Seed / Early</td><td>Specialized mesh reflector antennas and antenna/EM talent.</td></tr>
+                    <tr><td>Muon Space</td><td>Mountain View, CA</td><td>Series A/B (~$60M+)</td><td>Satellite fleet builder; payload and high-density RF talent pool.</td></tr>
+                    <tr><td>Northrop Grumman</td><td>Redondo Beach, CA</td><td>Public (NOC)</td><td>Elite RF/Microwave talent hub; SSPA and phased array design.</td></tr>
+                    <tr><td>Overair</td><td>Santa Ana, CA</td><td>Series B (Moderate)</td><td>Control systems; occasional RF/comm overlap.</td></tr>
+                    <tr><td>Palantir</td><td>Denver / Palo Alto</td><td>Public (PLTR)</td><td>Mission ops and software-defined mission profiles.</td></tr>
+                    <tr><td>Planet Labs</td><td><span class="sf-tag">San Francisco, CA</span></td><td>Public (PL)</td><td>Massive fleet operator; target payload comms and hardware.</td></tr>
+                    <tr><td>Qorvo</td><td>San Jose / Greensboro</td><td>Public (QRVO)</td><td>High-reliability RF component leaders; SiP and MCM expertise.</td></tr>
+                    <tr><td>Raytheon Technologies</td><td>El Segundo, CA</td><td>Public (RTX)</td><td>Leaders in high-power RF, GaN-based SSPAs, and radar.</td></tr>
+                    <tr><td>Reliable Robotics</td><td>Mountain View, CA</td><td>Series C (High)</td><td>Safety-critical avionics; RF/comms/nav engineering pool.</td></tr>
+                    <tr><td>Rocket Lab</td><td>Long Beach, CA</td><td>Public (RKLB)</td><td>Vertically integrated; RF payload and TT&C hardware designers.</td></tr>
+                    <tr><td>Rogers Corporation</td><td>Chandler, AZ</td><td>Public (ROG)</td><td>Industry standard for RF laminates for SSPA signal gain.</td></tr>
+                    <tr><td>Sanmina (SCI)</td><td>San Jose, CA</td><td>Public (SANM)</td><td>Tier-1 sat payload integrator; large RF/PCB engineering pool.</td></tr>
+                    <tr><td>Shield AI</td><td>San Diego, CA</td><td>Series F (Moderate)</td><td>Autonomy and RF-sensing/comms-adjacent talent.</td></tr>
+                    <tr><td>Sierra Space</td><td>Louisville, CO</td><td>Series B (Moderate)</td><td>Heavy heritage aerospace; spacecraft systems and comms hardware.</td></tr>
+                    <tr><td>Skyworks Solutions</td><td>Irvine / San Jose</td><td>Public (SWKS)</td><td>Integrated RF front-end modules; miniaturization specialists.</td></tr>
+                    <tr><td>SpaceX (Starlink)</td><td>Sunnyvale / Hawthorne</td><td>Late / Private</td><td>Gold-standard for phased array and high-volume RF production.</td></tr>
+                    <tr><td>SSL</td><td>Palo Alto, CA</td><td>-</td><td>Heritage GEO satellite manufacturing and hardware.</td></tr>
+                    <tr><td>Swissto12</td><td>Santa Clara, CA</td><td>Series B/C (~$50M+)</td><td>Innovative 3D-printed RF components and antennas.</td></tr>
+                    <tr><td>Varda Space</td><td><span class="sf-tag">San Francisco, CA</span></td><td>Series B (~$150M+)</td><td>Spacecraft hardware; integrated systems and RF talent.</td></tr>
+                    <tr><td>Vast</td><td>Long Beach, CA</td><td>Private (Well-funded)</td><td>Space station development; rapid hardware dev cycles.</td></tr>
+                    <tr><td>ViaSat</td><td>Carlsbad, CA</td><td>Public (VSAT)</td><td>Legacy GEO RF payload talent; microwave & link budget experts.</td></tr>
+                    <tr><td>York Space Systems</td><td>Denver, CO</td><td>Private Equity</td><td>Fast-turnaround satellite bus and RF integration experts.</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.5/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.13.5/js/dataTables.bootstrap5.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('#masterTable').DataTable({
+            "pageLength": 50,
+            "order": [[ 0, "asc" ]],
+            "language": {
+                "search": "🔍 Filter by Tech or City:"
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
